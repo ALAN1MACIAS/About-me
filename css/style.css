@@ -338,7 +338,7 @@ section .title::after{
   content: '';
   position: absolute;
   width: 3px;
-  background-color: #17298f;
+  background-color: #000;
   left: 50%;
   height: 100%;
   border-radius: 10px;
