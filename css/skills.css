@@ -1,31 +1,27 @@
-.skill{
-  margin: 0;
+.container-skill {
+  background-color: #D9B6A3;
+  height: 15px;
 }
 
-.skill-title{
-  background: #7c0a21;
-  color: #fff;
-  height: 2rem;
-}
-.skill-title h6, .skill-porcent h6{
-  margin-top: .4rem;
+.skills-hard {
+  text-align: right;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  color: white;
+  background-color: #7A98BF;
+  height:15px;
+  font-size: 12px;
 }
 
-.skill-bar{
-  background: crimson;
-  height: 2rem;
-  color: #fff;
-}
-.skill-bar .col-md{
-  max-width:20%;
-}
-.skill-bar .col-md-10{
-  border: 1px solid #000;
-}
-.skill-porcent{
-  height: 2rem;
-  background: #aaa9a9;
-}
-.skill-porcent .col-md{
-  max-width: 80%;
-}
+.rb { width: 50%; }
+.react { width: 50%; }
+.laravel { width: 70%; }
+.symfony { width: 50%; }
+.php { width: 70%; }
+.js { width: 70%; }
+.git { width: 75%; }
+.postman { width: 40%; }
+.mysql { width: 75%; }
+.sqls { width: 75%; }
+.postsql { width: 70%; }
+.firebird { width: 50%; }

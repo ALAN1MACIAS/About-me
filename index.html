@@ -9,16 +9,26 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/fond.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experience.css">
     <script src="js/script.js"></script>
   </head>
   <body>
+    <div class="loader">
+      <div class="ring"></div>
+   </div>
     <nav class="navbar-style">
+      <input type="checkbox" id="check-menu">
+      <label for="check-menu" class="icon-menu">
+        <i class='bx bx-menu'></i>
+      </label>
       <div class="max-width-style">
         <div class="logo">
-          <a href="#">About<span> me</span></a>
+          <a href="#">About<span class="span-me"> me</span></a>
         </div>
         <ul class="menu-style">
           <li><a href="#information" class="items-style">Home</a></li>
@@ -27,9 +37,6 @@
           <li><a href="#experience" class="items-style">Experience</a></li>
           <li><a href="#contact" class="items-style">Contact</a></li>
         </ul>
-        <div class="items-style">
-          <i class='bx bx-menu'></i>
-        </div>
       </div>
     </nav>
 
@@ -52,18 +59,24 @@
       </div>
     </section>
 
-    <div class="container">
-      <section class="about" id="about">
-        <div class="row">
-          <div class="col-md-12">
-            <h2 class="title">About me</h2>
+    <section class="about" id="about">
+      <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title">About me</h2>
+            </div>
+            <div class="col-md-12">
+              <p class="text-justify">As an IT engineer, I have developed competences in web development (JavaScript, PHP, Laravel), as well as database maintenance (MySQL, PostgreSQL, Firebird, SQL server) and technical support to computer equipment. I have also worked with Business Intelligence, Big Data and Scrum methodology in the area of software development.</p>
+            </div>
           </div>
-          <div class="col-md-12">
-            <p class="text-justify">As an IT engineer, I have developed competences in web development (JavaScript, PHP, Laravel), as well as database maintenance (MySQL, PostgreSQL, Firebird, SQL server) and technical support to computer equipment. I have also worked with Business Intelligence, Big Data and Scrum methodology in the area of software development.</p>
-          </div>
-        </div>
-      </section>
+      </div>
+      <br>
+      <div class="fond">
+        <img class="img-fond" src="img/fond.jpg" alt="">
+      </div>
+    </section>
 
+    <div class="container">
       <section class="skills" id="skills">
         <div class="row">
           <div class="col-md-12">
@@ -81,124 +94,53 @@
           </div>
           <div class="col-md-6">
             <h4>Hard.</h4>
-            <div class="skill">
-              <div class="row">
-                <div class="skill-title col-md-2">
-                  <h6>Ruby</h6>
-                </div>
-                <div class="skill-bar col-md-4">
-                </div>
-                <div class="skill-porcent col-md-6">
-                  <h6>40%</h6>
-                </div>
-              </div>
+            <p>Ruby on Rails</p>
+            <div class="container-skill">
+              <div class="skills-hard rb">50%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-6">
-                  <h6>JavaScript (Ajax, Json, Jquery)</h6>
-                </div>
-                <div class="skill-bar col-md-3">
-                </div>
-                <div class="skill-porcent col-md-3">
-                  <h6>70%</h6>
-                </div>
-              </div>
+            <p>React</p>
+            <div class="container-skill">
+              <div class="skills-hard react">50%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-2">
-                  <h6>PHP</h6>
-                </div>
-                <div class="skill-bar col-md-8">
-                </div>
-                <div class="skill-porcent col-md-2">
-                  <h6>80%</h6>
-                </div>
-              </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-2">
-                  <h6>Laravel</h6>
-                </div>
-                <div class="skill-bar col-md-8">
-                </div>
-                <div class="skill-porcent col-md-2">
-                  <h6>80%</h6>
-                </div>
-              </div>
+            <p>Laravel</p>
+            <div class="container-skill">
+              <div class="skills-hard laravel">70%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-3">
-                  <h6>Codeigniter</h6>
-                </div>
-                <div class="skill-bar col-md-5">
-                </div>
-                <div class="skill-porcent col-md-4">
-                  <h6>60%</h6>
-                </div>
-              </div>
+            <p>Symfony</p>
+            <div class="container-skill">
+              <div class="skills-hard symfony">50%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-2">
-                  <h6>MySQL</h6>
-                </div>
-                <div class="skill-bar col-md-8">
-                </div>
-                <div class="skill-porcent col-md-2">
-                  <h6>80%</h6>
-                </div>
-              </div>
+            <p>PHP</p>
+            <div class="container-skill">
+              <div class="skills-hard php">70%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-3">
-                  <h6>SQL Server</h6>
-                </div>
-                <div class="skill-bar col-md-6">
-                </div>
-                <div class="skill-porcent col-md-3">
-                  <h6>70%</h6>
-                </div>
-              </div>
+            <p>JavaScript (Ajax, Json, Jquery</p>
+            <div class="container-skill">
+              <div class="skills-hard js">70%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-2">
-                  <h6>Firebird</h6>
-                </div>
-                <div class="skill-bar col-md-7">
-                </div>
-                <div class="skill-porcent col-md-3">
-                  <h6>70%</h6>
-                </div>
-              </div>
+            <p>Git</p>
+            <div class="container-skill">
+              <div class="skills-hard git">75%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-3">
-                  <h6>PostgreSQL</h6>
-                </div>
-                <div class="skill-bar col-md-5">
-                </div>
-                <div class="skill-porcent col-md-4">
-                  <h6>60%</h6>
-                </div>
-              </div>
+            <p>Postman</p>
+            <div class="container-skill">
+              <div class="skills-hard postman">40%</div>
             </div>
-            <div class="skill mt-3">
-              <div class="row">
-                <div class="skill-title col-md-2">
-                  <h6>Github</h6>
-                </div>
-                <div class="skill-bar col-md-4">
-                </div>
-                <div class="skill-porcent col-md-6">
-                  <h6>40%</h6>
-                </div>
-              </div>
+            <p>MySQL</p>
+            <div class="container-skill">
+              <div class="skills-hard mysql">75%</div>
+            </div>
+            <p>SQL Server</p>
+            <div class="container-skill">
+              <div class="skills-hard sqls">75%</div>
+            </div>
+            <p>PostgreSQL</p>
+            <div class="container-skill">
+              <div class="skills-hard postsql">70%</div>
+            </div>
+            <p>Firebird</p>
+            <div class="container-skill">
+              <div class="skills-hard firebird">50%</div>
             </div>
           </div>
         </div>
@@ -208,23 +150,45 @@
         <div class="row">
           <div class="col-md-12">
             <h2 class="title">Experience</h2>
-            <div class="line-time">
-              <div class="fech-experience">
-                <div class="description">
-                  <p class="title-exp">Corporativo Internacional Especializado. <span><i class='bx bx-calendar' ></i> Dec 2020 - Jan 2021</span></p>
-                  <p>Develop and apply the skills of technical support, application developer and data analyst. Implemented as a core competency, in charge of the integrity and implementation of web systems:</p>
-                  <p>- Human Resources Document Management System (Laravel, SQL Server)</p>
-                  <p>- System for transport tracking and pedimentos management and form for the creation of a pdf for a quotation system. (Laravel, SQL Server)</p>
-                  <p>- Creation of a ticket system, in which the problems of the executives of the company are raised, and then follow the support of the ticket. (Laravel, MySQL)</p>
-                  <p>- Development of a system for the allocation of referrals by branch, at agency level. (Laravel, MYSQL, Firebird)</p>
-                </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="center-line">
+            <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class='icon bx bxs-star'></i>
+              <div class="details">
+                <span class="title">Backend Developer, EctoTec.</span>
+                <span class="fech">Mar 2021 - Jun 2021</span>
               </div>
-              <div class="fech-experience">
-                <div class="description">
-                  <p class="title-exp">Magsan Motors. <span><i class='bx bx-calendar' ></i> Jul 2020 - Oct 2020</span></p>
-                  <p>Development and implementation of software to control some variables of the digital dashboard of the vehicle, which is one of the first vehicles in which this company is working. The technologies with which I developed these variables of the board was with JAVA and some of its libraries, and the use of the computer board (Raspberry).</p>
-                </div>
+              <p>APIS development for a school system, using Symfony, Postman, Api Platform and MySQL.</p>
+            </section>
+          </div>
+          <div class="row row-2">
+            <section>
+              <i class='icon bx bxs-rocket'></i>
+              <div class="details">
+                <span class="title">Full Stack Developer, Corporativo Internacional Especializado.</span>
+                <span class="fech">Dec 2020 - Jan 2021</span>
               </div>
+              <p>Develop and apply the skills of technical support, application developer and data analyst. Implemented as a core competency, in charge of the integrity and implementation of web systems:</p>
+              <p>- Human Resources Document Management System (Laravel, SQL Server)</p>
+              <p>- System for transport tracking and pedimentos management and form for the creation of a pdf for a quotation system. (Laravel, SQL Server)</p>
+              <p>- Creation of a ticket system, in which the problems of the executives of the company are raised, and then follow the support of the ticket. (Laravel, MySQL)</p>
+              <p>- Development of a system for the allocation of referrals by branch, at agency level. (Laravel, MYSQL, Firebird)</p>
+            </section>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class='icon bx bxs-rocket'></i>
+              <div class="details">
+                <span class="title">Backend Developer, Magsan Motors.</span>
+                <span class="fech">Jul 2020 - Oct 2020</span>
+              </div>
+              <p>Development and implementation of software to control some variables of the digital dashboard of the vehicle, which is one of the first vehicles in which this company is working. The technologies with which I developed these variables of the board was with JAVA and some of its libraries, and the use of the computer board (Raspberry).</p>
+            </section>
           </div>
         </div>
       </section>
@@ -249,8 +213,23 @@
             </div>
           </div>
         </div>
+        <div class="center box">
+          <div class="content-logos">
+            <img class="logos-style" src="img/icons/ruby.png" alt="">
+            <img class="logos-style" src="img/icons/laravel_logo.png" alt="">
+            <img class="logos-style" src="img/icons/reactjs-logo.png" alt="">
+            <img class="logos-style" src="img/icons/github.png" alt="">
+            <img class="logos-style" src="img/icons/js.png" alt="">
+            <img class="logos-style" src="img/icons/php.png" alt="">
+            <img class="logos-style-db" src="img/icons/postgre-sql-logo-png.png" alt="">
+            <img class="logos-style-db" src="img/icons/sql-server-1.png" alt="">
+            <img class="logos-style-db" src="img/icons/mysql-logo.png" alt="">
+            <img class="logos-style-db" src="img/icons/firebird-database.png" alt="">
+
+          </div>
+        </div>
       </div>
     </footer>
-
   </body>
+  <script src="js/loader.js"></script>
 </html>
