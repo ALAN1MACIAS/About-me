@@ -37,7 +37,7 @@
   margin-top: 30px;
 }
 .portfolio-gallery .portfolio-img{
-  width: calc(100% / 2);
+  width: 500px;
   padding: 7px;
 }
 .portfolio-gallery .portfolio-img span{
