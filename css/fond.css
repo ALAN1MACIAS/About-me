@@ -1,3 +1,5 @@
 .fond .img-fond{
   max-width: 100%;
+  -webkit-filter: brightness(80%);
+    filter: brightness(80%);
 }

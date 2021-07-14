@@ -1,0 +1,195 @@
+.portfolio{
+  background-color: #f2f2f2;
+}
+.portfolio-items{
+  margin: 10px auto;
+  max-width: 1100px;
+}
+.portfolio-items nav{
+  display: flex;
+  justify-content: center;
+}
+.portfolio-items .items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  justify-content: space-between;
+}
+.portfolio-items .items span{
+  padding: 7px 25px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #7A98BF;
+  border-radius: 50px;
+  border: 2px solid #7A98BF;
+  transition: all 0.3s ease;
+}
+.portfolio-items .items span.active,
+.portfolio-items .items span:hover{
+  color: #fff;
+  background: #7A98BF;
+}
+
+.portfolio-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.portfolio-gallery .portfolio-img{
+  width: calc(100% / 2);
+  padding: 7px;
+}
+.portfolio-gallery .portfolio-img span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.portfolio-gallery .portfolio-img img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s linear;
+       -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+         -o-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+}
+.portfolio-gallery .portfolio-img .view-more {
+  display:none;
+  position: relative;
+  top:-50%;
+  left: 20%;
+}
+.portfolio-gallery .portfolio-img .view-more a{
+  outline: none;
+  text-decoration: none;
+  display: inline-block;
+  width: 19.5%;
+  margin-right: 0.625%;
+  text-align: center;
+  line-height: 3;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 3px;
+}
+.portfolio-gallery .portfolio-img .view-more .button-back{
+  background: #7A98BF;
+}
+.portfolio-gallery .portfolio-img .view-more .button-front{
+  background: #BAB479;
+}
+.portfolio-gallery .portfolio-img .view-more .button-web{
+  background: #A66844;
+}
+.portfolio-gallery .portfolio-img .view-more .button-back:hover{
+  background: #647fa2;
+}
+.portfolio-gallery .portfolio-img .view-more .button-front:hover{
+  background: #a7a169;
+}
+.portfolio-gallery .portfolio-img .view-more .button-web:hover{
+  background: #975b38;
+}
+.portfolio-gallery .portfolio-img:hover img{
+  -webkit-filter: brightness(70%);
+    filter: brightness(50%);
+}
+.portfolio-gallery .portfolio-img:hover .view-more{
+  display: inline;
+}
+.portfolio-gallery .portfolio-img.hide{
+  display: none;
+}
+.portfolio-gallery .portfolio-img.show{
+  animation: animate 0.4s ease;
+}
+
+@keyframes animate {
+  0%{
+    transform: scale(0.5);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  padding: 13px 15px 13px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  font-weight: 500;
+  margin-left: 5px;
+}
+.details .icon{
+  color: #007bff;
+  font-style: 22px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  width: 100%;
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .porfolio-gallery .portfolio-img{
+    width: calc(100% / 3);
+  }
+}
+@media (max-width: 800px) {
+  .porfolio-gallery .portfolio-img{
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 700px) {
+  .portfolio-items nav .items{
+    max-width: 600px;
+  }
+  nav .items span{
+    padding: 7px 15px;
+  }
+}
+@media (max-width: 600px) {
+  .portfolio-items{
+    margin: 30px auto;
+  }
+  .portfolio-items nav .items{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-items nav .items span{
+    margin: 5px;
+  }
+  .porfolio-gallery .portfolio-img{
+    width: 100%;
+  }
+}

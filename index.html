@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <script src="js/script.js"></script>
   </head>
   <body>
@@ -34,6 +35,7 @@
           <li><a href="#information" class="items-style">Home</a></li>
           <li><a href="#about" class="items-style">About me</a></li>
           <li><a href="#skills" class="items-style">Skills</a></li>
+          <li><a href="#portfolio" class="items-style">Portfolio</a></li>
           <li><a href="#experience" class="items-style">Experience</a></li>
           <li><a href="#contact" class="items-style">Contact</a></li>
         </ul>
@@ -145,7 +147,52 @@
           </div>
         </div>
       </section>
+    </div>
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title">Portfolio</h2>
+            </div>
+            <div class="portfolio-items">
+              <nav>
+                <div class="items">
+                  <span class="item active" data-name="all">All</span>
+                  <span class="item" data-name="rb">Ruby on Rails</span>
+                  <!-- <span class="item" data-name="sym">Symfony</span> -->
+                  <!-- <span class="item" data-name="lar">Laravel</span> -->
+                  <!-- <span class="item" data-name="html-css">HTML-CSS</span> -->
+                  <span class="item" data-name="rtjs">React</span>
+                </div>
+              </nav>
+              <div class="portfolio-gallery">
+                <div class="portfolio-img" data-name="rb">
+                  <span>
+                    <img src="img/proyects/love-out-products.png" alt="">
+                  </span>
+                  <div class="view-more">
+                    <a class="button-back"><i class='bx bxl-github' ></i> Back</a>
+                    <a class="button-front"><i class='bx bxl-github' ></i> Front</a>
+                    <a class="button-web"><i class='bx bxs-planet' ></i> Site</a>
+                  </div>
+                </div>
+                <div class="portfolio-img" data-name="rtjs">
+                  <span>
+                    <img src="img/proyects/love-out-products.png" alt="">
+                  </span>
+                  <div class="view-more">
+                    <a class="button-back"><i class='bx bxl-github' ></i> Back</a>
+                    <a class="button-front"><i class='bx bxl-github' ></i> Front</a>
+                    <a class="button-web"><i class='bx bxs-planet' ></i> Site</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+    <div class="container">
       <section class="experience" id="experience">
         <div class="row">
           <div class="col-md-12">
@@ -231,5 +278,6 @@
       </div>
     </footer>
   </body>
+  <script src="js/portfolio.js"></script>
   <script src="js/loader.js"></script>
 </html>
