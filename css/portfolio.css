@@ -77,6 +77,10 @@
 .portfolio-gallery .portfolio-img .view-more .button-back{
   background: #7A98BF;
 }
+.portfolio-gallery .portfolio-img .view-more .button-back-front{
+  background: #7A98BF;
+  width: 40%;
+}
 .portfolio-gallery .portfolio-img .view-more .button-front{
   background: #BAB479;
 }
