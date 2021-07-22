@@ -1,5 +1,5 @@
 .portfolio{
-  background-color: #7A98BF;
+  background-color: #b7c6da;
 }
 .portfolio-items{
   margin: 10px auto;
@@ -37,7 +37,7 @@
   margin-top: 30px;
 }
 .portfolio-gallery .portfolio-img{
-  width: 500px;
+  width: 366px;
   padding: 7px;
 }
 .portfolio-gallery .portfolio-img span{
@@ -71,6 +71,7 @@
   text-align: center;
   line-height: 3;
   cursor: pointer;
+  font-size: 13px;
   color: #fff;
   border-radius: 3px;
 }
@@ -83,6 +84,7 @@
 }
 .portfolio-gallery .portfolio-img .view-more .button-front{
   background: #BAB479;
+  width: 24%;
 }
 .portfolio-gallery .portfolio-img .view-more .button-web{
   background: #A66844;
@@ -117,52 +119,6 @@
   100%{
     transform: scale(1);
   }
-}
-
-.preview-box{
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  background: #fff;
-  max-width: 700px;
-  width: 100%;
-  z-index: 5;
-  opacity: 0;
-  pointer-events: none;
-  border-radius: 3px;
-  padding: 0 5px 5px 5px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-}
-.preview-box.show{
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.3s ease;
-}
-.preview-box .details{
-  padding: 13px 15px 13px 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.details .title{
-  display: flex;
-  font-size: 18px;
-  font-weight: 400;
-}
-.details .title p{
-  font-weight: 500;
-  margin-left: 5px;
-}
-.details .icon{
-  color: #007bff;
-  font-style: 22px;
-  cursor: pointer;
-}
-.preview-box .image-box{
-  width: 100%;
-  display: flex;
 }
 
 @media (max-width: 1000px) {
