@@ -1,0 +1,37 @@
+.skill-title {
+  background: #0E5673;
+  color: #fff;
+  height: 2rem;
+}
+
+.skill-title h6,
+.skill-porcent h6 {
+  margin-top: .4rem;
+}
+
+.skill-bar {
+  background: #C4D4F2;
+  height: 2rem;
+  color: #fff;
+}
+
+.skill-bar .col-md {
+  max-width: 20%;
+}
+
+.skill-bar .col-md-10 {
+  border: 1px solid #000;
+}
+
+.skill-porcent {
+  height: 2rem;
+  background: #e4e4e4;
+}
+
+.skill-porcent .col-md {
+  max-width: 80%;
+}
+
+.bi-diamond-fill {
+  color: #73463C;
+}

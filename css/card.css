@@ -1,0 +1,25 @@
+.card-icon {
+  background-color: #C4D4F2;
+  border-radius: 100%;
+  border: 0;
+  padding: 10px 10px 10px 10px;
+  width: 80px;
+  height: 80px;
+}
+
+.card-body .bi {
+  color: #071D26;
+  font-size: 40px;
+}
+
+.card-footer {
+  background-color: #A6705D;
+}
+
+.text-muted {
+  color: #fff !important;
+}
+
+.card-text .bi-diamond-fill {
+  font-size: 12px;
+}

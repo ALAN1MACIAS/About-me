@@ -1,0 +1,28 @@
+.fond {
+  position: relative;
+}
+
+.img-fond {
+  max-width: 100%;
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+.fond-cards {
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  text-align: center;
+}
+
+.row .col-md-4 .card .card-title .bx {
+  font-size: 60px;
+  font-weight: 800;
+  color: #7A98BF;
+  margin-top: 1rem;
+}
+
+.row .col-md-4 .card .card-title .text {
+  font-size: 25px;
+  font-weight: 600;
+}
