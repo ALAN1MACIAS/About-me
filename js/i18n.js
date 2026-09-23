@@ -44,7 +44,7 @@ const STRINGS = {
   "hero.photoAlt": { es: "Alan Avila", en: "Alan Avila" },
 
   "stats.years": { es: "Años de experiencia", en: "Years of experience" },
-  "stats.companies": { es: "Empresas", en: "Companies" },
+  "stats.companies": { es: "Empresas donde he trabajado", en: "Companies worked at" },
   "stats.certs": { es: "Certificaciones", en: "Certifications" },
 
   /* --- Sobre mí --------------------------------------------------------- */
